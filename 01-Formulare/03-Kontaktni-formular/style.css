@@ -1,11 +1,65 @@
 /* intuitivnejsi box siying */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 body {
-	margin: 20px;
-	font: 16px/1.5 sans-serif ;
+  margin: 20px;
+  font: 16px/1.5 sans-serif;
 }
 
 /* ------------------------- */
 
+h1 {
+  color: dodgerblue;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+}
+.form-field {
+  margin-bottom: 10px;
+}
+
+.form-field label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: grey;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.form-field input[type="text"]:focus,
+.form-field input[type="tel"]:focus,
+.form-field input[type="email"]:focus,
+.form-field textarea:focus {
+  outline: none;
+  border: 2px solid dodgerblue;
+}
+
+input[type="checkbox"]:focus {
+  outline-color: dodgerblue;
+}
+
+button {
+  padding: 10px 20px 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 16px;
+}

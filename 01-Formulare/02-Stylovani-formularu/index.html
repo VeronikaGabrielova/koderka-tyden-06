@@ -10,15 +10,30 @@
 
 	<h1>Stylování formulářů</h1>
 
+	<form action="https://formular.itgirls.cz" method="post">
+
 
 	<!-- Label a pole pod sebou -->
+<div class="form-field">
+<label for="jmeno">Jméno</label>
+<input type="text" name="jmeno" id="jmeno">
+</div>
 
-
+<div class="form-field">
+<label for="prijmeni">Příjmení<span class="required">*</span></label>
+<input type="text" name="prijmeni" id="prijmeni">
+</div>
+</form>
 
 	<!-- Label a pole vedle sebe -->
-
-
-
+<div class="form-horizontal">
+<label for="prezdivka">Přezdívka</label>
+<input type="text" name="prezdivka" id="prezdivka">
+</div>
+<div class="form-horizontal">
+<label for="vek">Věk</label>
+<input type="tetx" name="vek" id="vek">
+</div>
 
 	<!--
 		Stylování textového pole <input> nebo <textarea> a tlačítek <button>
@@ -26,6 +41,12 @@
 		- stylovatelný bez problémů
 		- pozor v CSS - nemůžeme stylovat jen "input"
 	-->
+
+	<div class="form-field">
+		<label for="adresa">Adresa</label>
+		<textarea name="adresa" id="adresa"  rows="5">
+		</textarea>
+	</div>
 
 
 

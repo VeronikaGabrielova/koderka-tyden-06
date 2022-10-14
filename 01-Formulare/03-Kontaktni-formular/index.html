@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kontaktní formulář</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-	<!--
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontaktní formulář</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
 		Vytvoř formulář podle obrázku zadani-ukolu.png.
 		Pole pro jméno a e-mail jsou povinná.
 		Pole "Čeho se týká váš dotaz" by mělo mít na výběr alespoň tři možnosti, např.:
@@ -22,5 +21,46 @@
 		... nebo ho napoj na některou z formulářových služeb na internetu.
 	-->
 
-</body>
+    <h1>Kontaktní formulář</h1>
+
+    <form method="post" action="http://formular.itgirls.cz">
+      <div class="form-field">
+        <label for="jmeno">Jméno a příjmení<span> *</span></label>
+        <input type="text" name="jmeno" id="jmeno" required />
+      </div>
+
+      <div class="form-field">
+        <label for="email">E-mail<span> *</span></label>
+        <input type="text" name="email" id="email" required />
+      </div>
+
+      <div class="form-field">
+        <label for="telefon">Telefon</label>
+        <input type="tel" name="telefon" id="telefon" />
+      </div>
+      <div class="form-field">
+        <label for="dotaz">Čeho se týká váš dotaz</label>
+
+        <select name="dotaz" id="dotaz">
+          <option></option>
+          <option>Dotaz na produkt</option>
+          <option>Dotaz na objednávku</option>
+          <option>Reklamace</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="zprava">Zpráva</label>
+
+        <textarea name="zprava" id="zprava" cols="30" rows="10"></textarea>
+      </div>
+
+      <input type="checkbox" name="zavolej" id="zavolej" />
+
+      <label for="zavolej">zavolejte mi zpět</label>
+
+      <div class="form-field">
+        <button type="submit">Odeslat</button>
+      </div>
+    </form>
+  </body>
 </html>
